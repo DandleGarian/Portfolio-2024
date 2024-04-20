@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,19 +18,9 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer base {
   body {
-    @apply bg-background-dark text-base text-text-dark;
+    @apply bg-background-dark text-base text-text-dark font-body relative;
   }
 
   /* h1, h2, h3, h4, h5, h6 {
@@ -51,5 +43,15 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .clip-path {
+    clip-path: polygon(0 15%, 100% 0, 100% 75%, 0 100%);
+  }
+}
+
+@layer components {
+  .font {
+    font-family: 'Roboto', sans-serif;
   }
 }

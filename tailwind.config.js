@@ -9,11 +9,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
         'background-dark': '#12130F',
         'text-dark': '#EAE6E5',
@@ -37,6 +32,9 @@ module.exports = {
         '4xl': '9.6rem',
         '5xl': '11.2rem',
         '6xl': '12.8rem',
+      },
+      fontFamily: {
+        body: ['Roboto', 'sans-serif'],
       },
       fontSize: {
         sm: ['0.8rem', '1.3'],

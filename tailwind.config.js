@@ -32,6 +32,10 @@ module.exports = {
         '4xl': '9.6rem',
         '5xl': '11.2rem',
         '6xl': '12.8rem',
+        '7xl': '14.4rem',
+        '8xl': '16rem',
+        '9xl': '17.6rem',
+        '10xl': '19.2rem',
       },
       fontFamily: {
         body: ['Roboto', 'sans-serif'],
@@ -46,6 +50,11 @@ module.exports = {
         '3xl': ['4.8rem', '1.3'],
         '4xl': ['5.2rem', '1.3'],
         '5xl': ['6.4rem', '1.3'],
+        '6xl': ['7.2rem', '1.3'],
+        '7xl': ['8rem', '1.3'],
+        '8xl': ['8.8rem', '1.3'],
+        '9xl': ['9.6rem', '1.3'],
+        '10xl': ['10.4rem', '1.3'],
       },
       screens: {
         'sm-max': { max: '649px' },

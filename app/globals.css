@@ -18,9 +18,22 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.devicon-devicon-plain {
+  max-width: 2em;
+}
+
+/* if you want to change the original color */
+.devicon-devicon-plain path {
+  fill: #4691f6;
+}
+
 @layer base {
   body {
-    @apply bg-background-dark text-base text-text-dark font-body relative;
+    @apply bg-background-dark text-base text-text-dark font-body relative overflow-x-auto overflow-y-hidden flex;
   }
 
   /* h1, h2, h3, h4, h5, h6 {

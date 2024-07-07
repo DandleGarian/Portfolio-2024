@@ -13,6 +13,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.4.0",
     "clsx": "^2.1.1",
+    "devicon": "^2.16.0",
     "framer-motion": "^11.2.0",
     "next": "14.1.4",
     "react": "^18",

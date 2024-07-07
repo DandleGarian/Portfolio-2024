@@ -1,7 +1,9 @@
 import "./globals.css";
 
+import { Background } from "../components/background";
 import { Hero } from "../components/hero";
 import { Nav } from "../components/nav";
+import { About } from "../components/about";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,8 +14,10 @@ export default function RootLayout() {
   return (
     <html lang="en">
       <body>
+        <Background />
         <Nav />
         <Hero />
+        <About />
       </body>
     </html>
   );

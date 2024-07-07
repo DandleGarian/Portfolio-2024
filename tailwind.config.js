@@ -9,6 +9,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        spotlight: "spotlight 2s ease .75s 1 forwards",
+      },
+      keyframes: {
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+      },
       colors: {
         'background-dark': '#12130F',
         'text-dark': '#EAE6E5',
@@ -37,6 +52,9 @@ module.exports = {
         '9xl': '17.6rem',
         '10xl': '19.2rem',
       },
+      flex: {
+        'scroll': '0 0 100vh'
+      },
       fontFamily: {
         body: ['Roboto', 'sans-serif'],
       },
@@ -44,6 +62,7 @@ module.exports = {
         sm: ['0.8rem', '1.3'],
         'sm+': ['1.2rem', '1.3'],
         base: ['1.6rem', '1.3'],
+        'base+': ['1.8rem', '1.7'],
         lg: ['2.4rem', '1.3'],
         xl: ['3.2rem', '1.3'],
         '2xl': ['4rem', '1.3'],

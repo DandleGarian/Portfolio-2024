@@ -17,7 +17,7 @@ export default function RootLayout() {
         <Background />
         <Nav />
         <Hero />
-        <About />
+        {/* <About /> */}
       </body>
     </html>
   );

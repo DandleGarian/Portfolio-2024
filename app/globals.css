@@ -31,9 +31,19 @@ html {
   fill: #4691f6;
 }
 
+.line-gradient::after {
+  content: "";
+  background-image: linear-gradient(to right, transparent, #EAE6E5, transparent);
+  position: absolute;
+  width: 150%;
+  height: 1px;
+  transform: translateX(50%);
+  right: 50%;
+}
+
 @layer base {
   body {
-    @apply bg-background-dark text-base text-text-dark font-body relative overflow-x-auto overflow-y-hidden flex;
+    @apply bg-background-dark text-base text-text-dark font-body relative overflow-hidden flex;
   }
 
   /* h1, h2, h3, h4, h5, h6 {

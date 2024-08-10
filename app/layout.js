@@ -1,9 +1,8 @@
 import "./globals.css";
 
+// Import components
 import { Background } from "../components/background";
-import { Hero } from "../components/hero";
-import { Nav } from "../components/nav";
-import { About } from "../components/about";
+import ClientLayout from "../components/ClientLayout";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,9 +14,7 @@ export default function RootLayout() {
     <html lang="en">
       <body>
         <Background />
-        <Nav />
-        <Hero />
-        {/* <About /> */}
+        <ClientLayout />
       </body>
     </html>
   );

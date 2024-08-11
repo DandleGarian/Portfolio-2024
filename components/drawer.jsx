@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { About } from "../components/about";
+import { About } from "./about";
 
-export const Drawer = () => {
+export const Drawer = ({ setIsDrawerOpen }) => {
   return (
     <div
-      className='w-full h-full'
+      className='w-full h-full overflow-x-hidden'
     >
-      <About />
+      <About setIsDrawerOpen={setIsDrawerOpen} />
     </div>
   );
 }

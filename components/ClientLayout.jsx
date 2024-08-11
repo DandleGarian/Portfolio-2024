@@ -30,7 +30,7 @@ const ClientLayout = () => {
             exit={{ x: '100%' }}
             transition={{ duration: 0.5 }}
           >
-            <Drawer />
+            <Drawer setIsDrawerOpen={setIsDrawerOpen} />
           </motion.div>
         )}
       </AnimatePresence>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { Back } from './back';
 import headshotGreen from '../public/headshot-green.png';
 import framerSvg from '../node_modules/devicon/icons/framermotion/framermotion-original.svg';
 import nodeSvg from '../node_modules/devicon/icons/nodejs/nodejs-plain.svg';
@@ -13,12 +14,13 @@ import nextjsSvg from '../node_modules/devicon/icons/nextjs/nextjs-original.svg'
 import { Spotlight } from './ui/spotlight';
 import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
 
-export const About = () => {
+export const About = ({ setIsDrawerOpen }) => {
   return (
-    <div id="about" className='w-screen h-screen p-md z-10 relative box-border bg-background-dark bg-dot-dark-accent-2/[0.7]'>
+    <div id="about" className='w-screen h-screen p-md z-10 relative box-border bg-background-dark bg-dot-dark-accent-2/[0.7] flex flex-col'>
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#12130F)]"></div>
-        <h3 className='absolute'>About</h3>
+        {/* <h3 className='absolute'>About</h3> */}
+        <Back setIsDrawerOpen={setIsDrawerOpen} />
         <div className="hidden lg:flex w-screen h-screen items-center z-10 relative px-40">
           <div className='w-1/2'>
             <div className='w-3/4 p-md text-base+ border border-dark-accent-2 bg-background-dark bg-opacity-70 rounded-lg'>
@@ -84,9 +86,9 @@ export const About = () => {
             </div>
           </div>
         </div>
-        {/* <div className="lg:hidden w-full h-full  m-sm+ border border-dark-accent-2 bg-background-dark bg-opacity-70 rounded-lg absolute inset-0">
-          <div className="w-full h-full z-10">
-            <div className='p-sm text-base border border-dark-accent-2 bg-background-dark bg-opacity-70 rounded-lg'>
+        <div className="lg:hidden border border-dark-accent-2 bg-background-dark bg-opacity-70 rounded-lg flex flex-col overflow-y-hidden z-10 flex-1">
+          <div className="w-full h-full z-10 flex-1 bg-background-dark bg-opacity-70 overflow-y-scroll">
+            <div className='p-sm text-base leading-[1.7]'>
                 My first coding experience came in the form of a little
                 application called Turtle Academy. You see, I
                 was a primary school educator in the not so distant past. Teaching
@@ -107,7 +109,11 @@ export const About = () => {
                 over my two cats with my wife.
               </div>
           </div>
-        </div> */}
+          <div className='flex items-center bg-background-dark bg-opacity-70'>
+            <div className='p-sm w-1/2 text-center'>ABOUT ME</div>
+            <div className='p-sm w-1/2 text-center'>SKILLS</div>
+          </div>
+        </div>
         <div className='absolute inset-0 flex items-center justify-center'>
           <div className='w-[80vw] h-[80vh] relative'>
             <div className="absolute top-0 left-0 w-full h-full opacity-60">
